@@ -50,6 +50,10 @@
     </div>
     <div id="lower_content">
         <h2 id="heading">About Site</h2><br><br><br><br>
+        
+        <?php
+          
+        ?>
            <div class="thumbnail right-caption span4">
                
   <img src="img/1.jpg" alt="1.jpg" >

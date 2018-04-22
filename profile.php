@@ -55,7 +55,7 @@
  <p><button>Online</button></p>
              </div>
             <div class="print">
-                <h1>About Myself</h1>
+                <h1>Area of work</h1>
                 <p class="title"><?php
                     $q="select * from user where email='$a';";
                       $query=mysqli_query($hritik,$q);
@@ -82,6 +82,7 @@ if(isset($_GET['submit']))
     $a=$_SESSION['email'];
     $line=$_GET['text'];
     $q="UPDATE `user` SET `about`='$line' WHERE email='$a';";
+    $_SESSION['about']=$line;
     $query=mysqli_query($hritik,$q);
     header("location:profile.php");
 }
