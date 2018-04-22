@@ -19,7 +19,9 @@
 			<ul class="cd-main-nav__list js-signin-modal-trigger">                
 				<li><a class="cd-main-nav__item cd-main-nav__item--signin" href="login.html" data-signin="login">Sign in</a></li>
 				<li><a class="cd-main-nav__item cd-main-nav__item--signup" href="signup.php" data-signin="signup">Sign up</a></li>
+                
 			</ul>
+            
 		</nav>
 	</header>
 
@@ -44,7 +46,7 @@
     </div>
     <div id="seetyping">
     <h1 id="demo"></h1>
-        <a href="home2.php"> <button class="btn btn-danger">Report</button></a>
+        <a href="report.php"> <button class="btn btn-danger">Report</button></a>
     </div>
     <div id="lower_content">
         <h2 id="heading">About Site</h2><br><br><br><br>
