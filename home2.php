@@ -24,6 +24,7 @@
       <ul class="nav navbar-nav">
         <li class="active"><a href="home2.php">Home</a></li>
         <li><a href="profile.php">profile</a></li>
+          <li ><a href="emer.php">Emergency</a></li>
        
       </ul>
         <ul class="nav navbar-nav navbar-right">

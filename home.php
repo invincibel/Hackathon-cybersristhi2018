@@ -46,7 +46,8 @@
     </div>
     <div id="seetyping">
     <h1 id="demo"></h1>
-        <a href="report.php"> <button class="btn btn-danger">Report</button></a>
+        <a href="location.php"><button class="btn btn-danger">emergency</button></a>
+        <a href="report.php"> <button id="round">report</button></a>
     </div>
     <div id="lower_content">
         <h2 id="heading">About Site</h2><br><br><br><br>

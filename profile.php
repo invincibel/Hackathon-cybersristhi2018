@@ -26,6 +26,7 @@
       <ul class="nav navbar-nav">
         <li><a href="home2.php">Home</a></li>
         <li class="active"><a href="profile.php">Profile</a></li>
+          <li ><a href="emer.php">Emergency</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
@@ -34,13 +35,7 @@
   </nav>
         <div class="row">
  <div class="card">
-  <img src="upload/<?php
-                      $a=$_SESSION['email'];
-                      $q="select * from user where email='$a';";
-                      $query=mysqli_query($hritik,$q);
-                      while($k=mysqli_fetch_array($query))
-                          echo $k['image'];
-                      ?>" alt="John" style="width:100%">
+  <img src="upload "alt="NO photo" style="width:100%">
   <h1><?php  $a=$_SESSION['email'];
                       $q="select * from user where email='$a';";
                       $query=mysqli_query($hritik,$q);
