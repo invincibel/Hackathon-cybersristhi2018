@@ -23,7 +23,7 @@
     <input type="submit" value="submit" name="submit" id="submit">
       </form>
   </div>
-
+<center><video id="video" width="640" height="480" autoplay></video></center>
 
         <script>
             var x = document.getElementById("lon");
@@ -39,6 +39,13 @@ function getLocation() {
 function showPosition(position) {
     x.value =  position.coords.latitude ;
     y.value= position.coords.longitude;
+}
+var video = document.getElementById('video');
+if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+ navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+ video.src = window.URL.createObjectURL(stream);
+ video.play();
+ });
 }
         </script>
     </body>
