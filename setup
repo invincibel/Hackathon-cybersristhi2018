@@ -1,0 +1,65 @@
+
+make a database of name invincible
+
+CREATE TABLE `location` (
+  `lat` varchar(20) NOT NULL,
+  `lon` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `location`
+--
+
+INSERT INTO `location` (`lat`, `lon`) VALUES
+('77.2217831', '28.686273800000002');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `report`
+--
+
+CREATE TABLE `report` (
+  `area` varchar(50) NOT NULL,
+  `data` longtext NOT NULL,
+  `image` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `report`
+--
+
+INSERT INTO `report` (`area`, `data`, `image`) VALUES
+('noida', 'actually i am being murdered...help', 'WIN_20170723_16_14_41_Pro.jpg');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `name` varchar(20) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(10) NOT NULL,
+  `image` varchar(50) NOT NULL,
+  `about` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`name`, `email`, `password`, `image`, `about`) VALUES
+('hritik aggarwal', 'hritik.aggarwal31@gmail.com', 'hritikagg', 'WIN_20180330_20_20_16_Pro.jpg', 'noida');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`email`);
+COMMIT;
