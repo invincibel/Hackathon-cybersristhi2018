@@ -38,7 +38,7 @@
             echo "LATITUDE:".$k['lat'];
             echo "<br>";
                 echo "LONGITUDE:".$k['lon'];
-            
+                        echo "<br><br>";
         }
         ?>
     </body>
