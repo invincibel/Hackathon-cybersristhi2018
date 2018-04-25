@@ -16,7 +16,7 @@
        <input type="file" name="image" value="Upload">
       <input type="submit" value="Submit" name="submit">
     </form>
-  </div>
-        
+  </div> 
     </body>
 </html>
+
