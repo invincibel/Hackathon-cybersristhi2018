@@ -1,0 +1,281 @@
+-- phpMyAdmin SQL Dump
+-- version 4.7.4
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Oct 30, 2018 at 04:00 PM
+-- Server version: 10.1.28-MariaDB
+-- PHP Version: 7.1.11
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Database: `invincible`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cime_rate`
+--
+
+CREATE TABLE `cime_rate` (
+  `S_no` int(11) NOT NULL,
+  `State/UT` varchar(50) NOT NULL,
+  `Crime_rate` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `cime_rate`
+--
+
+INSERT INTO `cime_rate` (`S_no`, `State/UT`, `Crime_rate`) VALUES
+(1, 'Andhra Pradesh', 106774),
+(2, 'Arunachal Pradesh', 2534),
+(3, 'Assam', 102550),
+(4, 'Bihar', 164163),
+(5, 'Chhattisgarh', 55029),
+(6, 'Goa', 2692),
+(7, 'Gujarat', 147122),
+(8, 'Haryana', 88527),
+(9, 'Himachal Pradesh', 13386),
+(10, 'JAMMU & Kashmir', 24501),
+(11, 'Jharkhand', 40710),
+(12, 'Karnataka', 148072),
+(13, 'Kerala', 260097),
+(14, 'Madhya Pradesh', 264418),
+(15, 'Maharshtra', 261714),
+(16, 'Manipur', 3174),
+(17, 'Meghalaya', 3366),
+(18, 'Mizoram', 2425),
+(19, 'Nagaland', 1376),
+(20, 'Odisha', 81460),
+(21, 'Punjab', 40007),
+(22, 'Rajasthan', 180398),
+(23, 'Sikkim', 809),
+(24, 'Tamil Nadu', 179896),
+(25, 'Telangana', 108991),
+(26, 'Tripura', 3933),
+(27, 'Uttar Pradesh', 282171),
+(28, 'Uttarakhan', 10876),
+(29, 'West Bengal', 176569),
+(30, 'Andaman & Nicobar', 802),
+(31, 'Chandigarh', 2996),
+(32, 'Dadra & Nagar Haveli', 244),
+(33, 'Daman & Diu', 271),
+(34, 'Delhi', 209519),
+(35, 'Lakshadweep', 36),
+(36, 'Puducherry', 4086);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `literacy_rate`
+--
+
+CREATE TABLE `literacy_rate` (
+  `Rank` int(11) NOT NULL,
+  `State/UT` varchar(50) NOT NULL,
+  `Literacy Rate` varchar(50) NOT NULL,
+  `Male Literacy` varchar(50) NOT NULL,
+  `Female Literacy` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `literacy_rate`
+--
+
+INSERT INTO `literacy_rate` (`Rank`, `State/UT`, `Literacy Rate`, `Male Literacy`, `Female Literacy`) VALUES
+(1, 'Kerala', '93.91', '96.02', '91.98'),
+(2, 'Lakshadweep', '92.28', '96.11', '88.25'),
+(3, 'Mizoram', '91.58', '93.72', '89.40'),
+(4, 'Tripura', '87.75', '92.18', '83.15'),
+(5, 'Goa', '87.40', '92.81', '81.84'),
+(6, 'Daman & Diu', '87.07', '91.48', '79.59'),
+(7, 'Pudducherry', '86.55', '91.12', '82.22'),
+(8, 'Chandigarh', '86.43', '90.54', '81.38'),
+(9, 'Delhi', '86.34', '91.03', '81.93'),
+(10, 'Andaman & Nicobar', '86.27', '90.11', '81.84'),
+(11, 'Himachal Pradesh', '83.78', '90.83', '76.6'),
+(12, 'Maharashtra', '82.91', '89.92', '75.48'),
+(13, 'Sikkim', '82.20', '87.29', '76.43'),
+(14, 'Tamil Nadu', '80.33', '86.81', '73.86'),
+(15, 'Nagaland', '80.11', '83.29', '76.89'),
+(16, 'Manipur', '79.85', '86.49', '73.17'),
+(17, 'Uttarakhand', '79.63', '88.33', '70.70'),
+(18, 'Gujarat', '79.31', '87.23', '70.73'),
+(19, 'Dadra & Nagar Haveli', '77.65', '86.46', '65.93'),
+(20, 'West Bengal', '77.08', '82.67', '71.16'),
+(21, 'Punjab ', '76.68', '81.48', '71.34'),
+(22, 'Haryana', '76.64', '85.38', '66.77'),
+(23, 'Karnataka', '75.60', '82.85', '68.13'),
+(24, 'Meghalaya', '75.48', '77.17', '73.78'),
+(25, 'odisha', '73.45', '82.40', '64.36'),
+(26, 'Assam', '73.18', '78.81', '67.27'),
+(27, 'Chhattisgarh', '71.04', '81.45', '60.59'),
+(28, 'Madhya Pradesh', '70.63', '80.53', '60.02'),
+(29, 'Uttar Pradesh', '69.72', '79.24', '59.26'),
+(30, 'Jammu & Kashmir', '68.74', '78.26', '58.01'),
+(31, 'Jharkhand', '67.63', '78.45', '56.21'),
+(32, 'Andhra Pradesh', '67.4', '75.56', '59.74'),
+(33, 'Rajasthan', '67.06', '80.51', '52.66'),
+(34, 'Arunachal Pradesh', '66.95', '73.69', '59.97'),
+(35, 'Telangana', '66.5', '--', '--'),
+(36, 'Bihar', '63.82', '73.39', '53.333');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `location`
+--
+
+CREATE TABLE `location` (
+  `lat` varchar(20) NOT NULL,
+  `lon` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `location`
+--
+
+INSERT INTO `location` (`lat`, `lon`) VALUES
+('77.2217831', '28.686273800000002'),
+('77.37131269999999', '28.630523699999998');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `report`
+--
+
+CREATE TABLE `report` (
+  `area` varchar(50) NOT NULL,
+  `data` longtext NOT NULL,
+  `image` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `report`
+--
+
+INSERT INTO `report` (`area`, `data`, `image`) VALUES
+('noida', 'actually i am being murdered...help', 'WIN_20170723_16_14_41_Pro.jpg'),
+('loda', 'my chut s missing', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `sex_ratio`
+--
+
+CREATE TABLE `sex_ratio` (
+  `S_no` int(11) NOT NULL,
+  `State` varchar(50) NOT NULL,
+  `Ratio` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `sex_ratio`
+--
+
+INSERT INTO `sex_ratio` (`S_no`, `State`, `Ratio`) VALUES
+(1, 'Jammu & Kashmir', 883),
+(2, 'Himachal Pradesh', 974),
+(3, 'Punjab', 893),
+(4, 'Chandigarh', 818),
+(5, 'Uttarakhand', 963),
+(6, 'Haryana', 877),
+(7, 'Delhi ', 866),
+(8, 'Rajasthan', 926),
+(9, 'Uttar Pradesh', 908),
+(10, 'Bihar', 916),
+(11, 'Sikkim', 889),
+(12, 'Arunachal Pradesh', 920),
+(13, 'Nagaland ', 931),
+(14, 'Manipur', 987),
+(15, 'Mizoram', 975),
+(16, 'Tripura', 961),
+(17, 'Meghalaya', 986),
+(18, 'Assam', 954),
+(19, 'West Bengal', 947),
+(20, 'Jharkhand', 947),
+(21, 'Orissa', 978),
+(22, 'Chttisgarh', 991),
+(23, 'Madhya Pradesh', 930),
+(24, 'Gujarat', 918),
+(25, 'Daman & Diu', 618),
+(26, 'Dadra & Nagar Haveli', 775),
+(27, 'Maharashtra', 925),
+(28, 'Andhra pradesh', 992),
+(29, 'Karnataka', 968),
+(30, 'Goa', 968),
+(31, 'Lakshadweep', 946),
+(32, 'Kerala', 1084),
+(33, 'Tamil Nadu', 995),
+(34, 'Puducherry', 1038),
+(35, 'Andaman & Nicobar', 878);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user`
+--
+
+CREATE TABLE `user` (
+  `name` varchar(20) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `password` varchar(10) NOT NULL,
+  `image` varchar(50) NOT NULL,
+  `about` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`name`, `email`, `password`, `image`, `about`) VALUES
+('hritik aggarwal', 'a.kr2346@gmail.com', 'hritik.31', 'WIN_20180330_20_20_12_Pro.jpg', ''),
+('hritik', 'an@gmail.com', 'hritik', 'Screenshot (2).png', ''),
+('hritik aggarwal', 'hritik.aggarwal31@gmail.com', 'hritikagg', 'WIN_20180330_20_20_16_Pro.jpg', 'noida');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `cime_rate`
+--
+ALTER TABLE `cime_rate`
+  ADD PRIMARY KEY (`S_no`);
+
+--
+-- Indexes for table `literacy_rate`
+--
+ALTER TABLE `literacy_rate`
+  ADD PRIMARY KEY (`Rank`);
+
+--
+-- Indexes for table `sex_ratio`
+--
+ALTER TABLE `sex_ratio`
+  ADD PRIMARY KEY (`S_no`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`email`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
